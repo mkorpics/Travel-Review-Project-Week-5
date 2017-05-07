@@ -1,0 +1,58 @@
+﻿@model TravelReviewProject.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="reviewsDetails">
+
+    <div class="detailsDisplay">
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 detailsMain">
+                <h2>@Html.DisplayFor(model => model.RanchName)</h2>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <p class="detailsHeadings">@Html.DisplayNameFor(model => model.Category.Type):</p>
+                        <p class="detailsHeadings">@Html.DisplayNameFor(model => model.Location.State):</p>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <p class="detailsText">@Html.DisplayFor(model => model.Category.Type)</p>
+                        <p class="detailsText">@Html.DisplayFor(model => model.Location.State)</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="detailsText">By: @Html.DisplayFor(model => model.Author)</p>
+                    <p class="detailsText">@Html.DisplayNameFor(model => model.DateOfStay): @Html.DisplayFor(model => model.DateOfStay)</p>
+                    <p class="detailsText">@Html.DisplayNameFor(model => model.LengthOfStay): @Html.DisplayFor(model => model.LengthOfStay)</p>
+                </div>
+                <div class="row">
+                    <h4 class="detailsText text-center title">@Html.DisplayFor(model => model.Title)</h4>
+                    <p class="detailsText text-center">@Html.DisplayFor(model => model.Comment)</p>
+                </div>
+
+                <div class="row">
+                    <p class="detailsText datePosted">@Html.DisplayNameFor(model => model.DatePosted): @Html.DisplayFor(model => model.DatePosted)</p>
+                </div>
+
+                <p class="editBtn">
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { role = "button", @class = "btn", @id = "reviewsButton" })
+                    @Html.ActionLink("Back to List", "Index", new { }, new { role = "button", @class = "btn", @id = "reviewsButton" })
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 detailsRanchInfo">
+                <p class="detailsHeadings">Ranch Contact Information:</p>
+                <p class="detailsText">
+                    <span class="glyphicon glyphicon-map-marker" sr-only="Location"></span>
+                    @Html.DisplayFor(model => model.RanchName) <br />
+                    2342 Ranch Way<br />
+                    @Html.DisplayFor(model => model.Location.City), @Html.DisplayFor(model => model.Location.State), 41141
+                </p>
+                <p class="detailsText"><span class="glyphicon glyphicon-phone" sr-only="Phone number"></span> (555) 555-1212</p>
+                <p class="detailsText"><span class="glyphicon glyphicon-envelope" sr-only="email"></span> name@email.com</p>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,13 +1,19 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
+    background-color: #FFFE9D;
 }
 
-/* Set padding to keep content from hitting the edges */
+.main {
+    min-height: 100%;
+    color: #FFFE9D;
+}
+
+/* Set padding to keep content from hitting the edges 
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
+    */
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -21,4 +27,244 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/*MY CSS CODE*/
+
+/*GENERAL*/
+.btn {
+    background-color: #3B0B03;
+    color: #FFFE9D;
+}
+
+h2 {
+    margin-top: 0;
+    padding-top: 5vh;
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: #3B0B03;
+    color: #FFFE9D;
+    margin-bottom: 0;
+}
+
+
+/*JUMBOTRON*/
+
+.jumbotron {
+    display: flex;
+    background-image: url('images/Cake Truck_70.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    height: 70vh;
+}
+
+    .jumbotron h1, p, .btn {
+        color: black;
+        text-shadow: 2px, 2px, 2px, darkslategray;
+        padding: 5px;
+    }
+
+    .jumbotron .thumbnail {
+        height: 15vh;
+        width: 10vw;
+    }
+
+.flex-box {
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-align: center;
+    height: 50vh;
+    width: 80vw;
+    border: 2px groove darkslateblue;
+    background-color: rgba(200,200,200,.1);
+    padding: 20px 50px;
+    margin-left: 7vw;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+}
+
+    .flex-item .btn {
+        margin-top: 5vh;
+        color: #FFFE9D;
+    }
+
+/*REVIEWS INDEX*/
+
+.reviews {
+    background-color: #FFFE9D;
+    border: 4px groove #3B0B03;
+    margin: 15px 10px;
+}
+
+.fieldName {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: 900;
+}
+
+.captionContent {
+    padding: 15px 20px;
+    height: 30vh;
+}
+
+.editBtn {
+    float: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 7vh;
+}
+
+    .editBtn #reviewsButton {
+        color: #FFFE9D;
+        padding: 5px 13px;
+    }
+
+.captionHeading {
+    border-right: 2px groove #3B0B03;
+    padding-top: 15px;
+}
+
+.reviewsMain {
+    background-image: url('images/wood-2065369_960_720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10vh;
+}
+
+/*REVIEWS DETAILS PAGE*/
+
+.reviewsDetails {
+    background-image: url('images/Cake Truck_63.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100%;
+    height: 130vh;
+    padding: 12vh 7vw;
+}
+
+.detailsDisplay {
+    padding: 2vh 4vw 5vh 4vw;
+    background-color: rgba(59,11,3,.5);
+    width: 60vw;
+}
+
+.detailsMain {
+    border-right: 2px groove rgb(59,11,3);
+}
+
+.detailsRanchInfo {
+    padding-left: 3vw;
+}
+
+.detailsHeadings {
+    color: #FFFE9D;
+    font-weight: 800;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.detailsText {
+    color: #FFFE9D;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+    .detailsText.title, .detailsText.datePosted {
+        padding-top: 5vh;
+    }
+
+/*REVIEWS EDIT PAGE*/
+
+.reviewsEdit {
+    background-image: url('images/me and lady.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5vh 7vw 20vh 7vw;
+}
+
+.reviewsColor{
+    background-color: rgba(59,11,3,.5);
+    width: 40vw;
+    padding: 0 3vw 8vh 3vw;
+}
+
+.reviewsButton {
+    color: #FFFE9D;
+    padding: 5px 13px;
+}
+
+.reviewsButton.float {
+    float: right;
+}
+
+
+/*HOME MAIN BODY*/
+
+.locationsRow {
+    padding: 35px 0;
+    margin: 10px auto;
+    color: #3B0B03;
+}
+
+.caption {
+    margin: 0 15px;
+}
+
+    .caption .btn {
+        color: #FFFE9D;
+    }
+
+.thumbnail {
+    background-color: #3B0B03;
+}
+
+.reverseTheme {
+    background-color: #3B0B03;
+    color: #FFFE9D;
+}
+
+    .reverseTheme .thumbnail {
+        background-color: #FFFE9D;
+    }
+
+    .reverseTheme .btn {
+        background-color: #FFFE9D;
+        color: #3B0B03;
+    }
+
+    .reverseTheme p {
+        color: #FFFE9D;
+    }
+
+/*FOOTER*/
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #3B0B03;
+    color: #FFFE9D;
+    height: 15vh;
+}
+
+    footer.container-fluid {
+        margin-bottom: 0;
+    }
+
+    footer p {
+        color: #FFFE9D;
+        padding: 0;
+        width: 100vw;
+    }
+
+.glyphicon-chevron-up {
+    padding-top: 4vh;
+    margin-bottom: 0;
 }

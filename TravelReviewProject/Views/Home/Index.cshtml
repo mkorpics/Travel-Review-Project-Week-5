@@ -2,30 +2,57 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    <div class="jumbotron container-fluid" id="Jumbotron">
+        <div class="flex-box">
+            <h1 class="flex-item">Ranch Life</h1>
+            <p class="flex-item">When you want to get away</p>
+            <p class="flex-item"><a href="~/Reviews/Index" class="btn btn-lg">Learn more &raquo;</a></p>
+        </div>
+    </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <section class="container" id="HomeMain">
+        <div class="row locationsRow">
+            <div class="col-md-8">
+                <div class="caption">
+                    <h3>Reviews</h3>
+                    <p>"I could be in no more danger here," I said, "than naked and unarmed in the savage jungles or upon the lonely plains of Pellucidar. I was fortunate, I think, to return to Phutra at all. As it was I barely escaped death within the jaws of a huge sithic. No, I am sure that I am safer in the hands of intelligent creatures such as rule Phutra. At least such would be the case in my own world, where human beings like myself rule supreme. There the higher races of man extend protection and hospitality to the stranger within their gates, and being a stranger here I naturally assumed that a like courtesy would be accorded me."</p>
+                    <p><a href="~/Reviews/Index" class="btn" role="button" sr-only="Reserve Now">See Now!</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="~/Content/images/Cake Truck_160.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row reverseTheme locationsRow">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="~/Content/images/Cake Truck_426.jpg" />
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="caption">
+                    <h3>Types of Ranches</h3>
+                    <p>Sometimes the world looks perfect, nothing to rearrange. Sometimes you just, get a feeling like you need some kind of change. No matter what the odds are this time, nothing's going to stand in my way. This flame in my heart, and a long lost friend gives every dark street a light at the end. Standing tall, on the wings of my dream. Rise and fall, on the wings of my dream. The rain and thunder, the wind and haze. I'm bound for better days. It's my life and my dream, nothing's going to stop me now.</p>
+                    <p><a href="~/Categories/Index" class="btn" role="button" sr-only="Check it out">Check It Out!</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row locationsRow">
+            <div class="col-md-8">
+                <div class="caption">
+                    <h3>Locations</h3>
+                    <p>Center Alley worse jester pore ladle gull hoe lift wetter stop-murder an toe heft-cisterns. Daze worming war furry wicket an shellfish parsons, spatially dole stop-murder, hoe dint lack Center Alley an, infect, word orphan traitor pore gull mar lichen ammonol dinner hormone bang. Oily inner moaning disk wicket oiled worming shorted, "Center Alley, gad otter bet, an goiter wark! Suture lacy ladle bomb! Shaker lake!" an firm moaning tell gnat disk ratchet gull word heifer wark lacquer hearse toe kipper horsing ardor, washer heft-cistern's closing, maker bets, gore tutor star fur perversions, cooker males, washer dashes an doe oily udder hoard wark. Nor wander pore Center Alley worse tarred an disgorged!</p>
+                    <p><a href="~/Locations/Index" class="btn" role="button" sr-only="Join us">View All!</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="~/Content/images/Cake Truck_62.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>

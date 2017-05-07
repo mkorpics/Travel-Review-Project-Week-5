@@ -44,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -120,15 +128,69 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LocationsController.cs" />
+    <Compile Include="Controllers\ReviewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\TravelReviewProjectContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\11248067_10204477604483877_5421737985723306648_n.jpg" />
+    <Content Include="Content\images\11351387_10153416703302650_4568700289597657454_n %281%29.jpg" />
+    <Content Include="Content\images\11694039_10204563278305669_2220913325272185329_n.jpg" />
+    <Content Include="Content\images\11694039_10204563280545725_9014831339318403438_n.jpg" />
+    <Content Include="Content\images\11753705_10205805934962450_7720741967566378544_n %282%29.jpg" />
+    <Content Include="Content\images\11924743_10100394102687297_2440219550839815431_n %281%29.jpg" />
+    <Content Include="Content\images\12032052_10153660268617650_4945984882558392804_n.jpg" />
+    <Content Include="Content\images\12747927_10205343746933469_5225943762117173890_o.jpg" />
+    <Content Include="Content\images\13310543_10154233178687650_6449646765497122946_n.jpg" />
+    <Content Include="Content\images\13350410_489170317945889_5941211877861552607_o.jpg" />
+    <Content Include="Content\images\15069155_557617524434501_5075213603786252706_o.jpg" />
+    <Content Include="Content\images\15128869_557617577767829_921436816401402234_o.jpg" />
+    <Content Include="Content\images\15128932_557616871101233_8521414735232683251_o.jpg" />
+    <Content Include="Content\images\15129050_557475974448656_2693879939227460640_o.jpg" />
+    <Content Include="Content\images\15138542_557616434434610_4579925431041229921_o.jpg" />
+    <Content Include="Content\images\15317867_10211266290603288_2623596850520028920_n.jpg" />
+    <Content Include="Content\images\1536461_10204428790143549_8815776097893677649_n %281%29.jpg" />
+    <Content Include="Content\images\15390993_10211266286723191_2483252566335333178_n.jpg" />
+    <Content Include="Content\images\15391536_10211298780935526_159012009544429383_o.jpg" />
+    <Content Include="Content\images\15400414_10211266285283155_1168336007575011002_n.jpg" />
+    <Content Include="Content\images\15419529_10211266292643339_2197658607895417352_o.jpg" />
+    <Content Include="Content\images\15419646_10211266295003398_3913232965166081911_o.jpg" />
+    <Content Include="Content\images\18197814_10208863268446764_1456880107_n.jpg" />
+    <Content Include="Content\images\Cake Truck_160.jpg" />
+    <Content Include="Content\images\Cake Truck_426.jpg" />
+    <Content Include="Content\images\Cake Truck_62.jpg" />
+    <Content Include="Content\images\Cake Truck_63.jpg" />
+    <Content Include="Content\images\Cake Truck_70.jpg" />
+    <Content Include="Content\images\DSCN1969.jpg" />
+    <Content Include="Content\images\DSCN2850.jpg" />
+    <Content Include="Content\images\friends_0380.JPG" />
+    <Content Include="Content\images\friends_0387.JPG" />
+    <Content Include="Content\images\IMGP2686.jpg" />
+    <Content Include="Content\images\IMGP2713.jpg" />
+    <Content Include="Content\images\IMG_1534.jpg" />
+    <Content Include="Content\images\loping_0457.JPG" />
+    <Content Include="Content\images\loping_0458.JPG" />
+    <Content Include="Content\images\me and lady.JPG" />
+    <Content Include="Content\images\Mexico.JPG" />
+    <Content Include="Content\images\Silhouette.JPG" />
+    <Content Include="Content\images\starfish friends.JPG" />
+    <Content Include="Content\images\waving hi.JPG" />
+    <Content Include="Content\images\wood-1234667_960_720.jpg" />
+    <Content Include="Content\images\wood-164874_960_720.jpg" />
+    <Content Include="Content\images\wood-2065369_960_720.jpg" />
+    <Content Include="Content\images\wood-Boards-Plank-Texture-Wood-Structure-Grain-Board-65676.jpg" />
+    <Content Include="Content\images\wood-texture-1516370_960_720.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -161,10 +223,24 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Reviews\Create.cshtml" />
+    <Content Include="Views\Reviews\Delete.cshtml" />
+    <Content Include="Views\Reviews\Details.cshtml" />
+    <Content Include="Views\Reviews\Edit.cshtml" />
+    <Content Include="Views\Reviews\Index.cshtml" />
+    <Content Include="Views\Locations\Create.cshtml" />
+    <Content Include="Views\Locations\Delete.cshtml" />
+    <Content Include="Views\Locations\Details.cshtml" />
+    <Content Include="Views\Locations\Edit.cshtml" />
+    <Content Include="Views\Locations\Index.cshtml" />
+    <Content Include="Views\Categories\Create.cshtml" />
+    <Content Include="Views\Categories\Delete.cshtml" />
+    <Content Include="Views\Categories\Details.cshtml" />
+    <Content Include="Views\Categories\Edit.cshtml" />
+    <Content Include="Views\Categories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
