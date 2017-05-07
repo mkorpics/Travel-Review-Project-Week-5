@@ -9,6 +9,7 @@ namespace TravelReviewProject.Models
     public class Category
     {
         [Key]
+        [Display(Name = "Type Ranch")]
         public int ID { get; set; }
 
         public string Type { get; set; }

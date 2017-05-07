@@ -9,6 +9,7 @@ namespace TravelReviewProject.Models
     public class Location
     {
         [Key]
+        [Display(Name = "Location")]
         public int ID { get; set; }
         
         public string City { get; set; }
