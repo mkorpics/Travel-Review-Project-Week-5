@@ -1,12 +1,20 @@
-﻿body {
+﻿/*GENERAL WEBAPP*/
+
+body {
     padding-top: 50px;
     background-color: #FFFE9D;
 }
 
 .main {
     min-height: 100%;
-    color: #FFFE9D;
+    color: #3B0B03;
 }
+
+.table {
+    margin: 0;
+}
+
+
 
 /* Set padding to keep content from hitting the edges 
 .body-content {
@@ -54,16 +62,19 @@ h2 {
 
 .jumbotron {
     display: flex;
-    background-image: url('images/Cake Truck_70.jpg');
+    background-image: url('images/18197814_10208863268446764_1456880107_n.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
     height: 70vh;
+    margin-bottom: 0;
+    border: 4px groove #3B0B03;
 }
 
-    .jumbotron h1, p, .btn {
-        color: black;
-        text-shadow: 2px, 2px, 2px, darkslategray;
+    .jumbotron h1, h3 {
+        font-family: 'Pacifico', cursive;
+        color: #3B0B03;
+        text-shadow: 3px 3px 2px #FFFE9D;
         padding: 5px;
     }
 
@@ -80,7 +91,7 @@ h2 {
     -webkit-box-align: center;
     height: 50vh;
     width: 80vw;
-    border: 2px groove darkslateblue;
+    border: 3px groove #3B0B03;
     background-color: rgba(200,200,200,.1);
     padding: 20px 50px;
     margin-left: 7vw;
@@ -96,12 +107,85 @@ h2 {
         color: #FFFE9D;
     }
 
+    /*HOME INDEX*/
+
+.homeRow {
+    padding: 45px 0;
+    margin: 10px auto;
+    color: #3B0B03;
+}
+
+.caption {
+    margin: 0 15px;
+}
+
+    .caption .btn {
+        color: #FFFE9D;
+    }
+
+.thumbnail {
+    background-color: #3B0B03;
+}
+
+.reverseTheme {
+    background-color: #3B0B03;
+    color: #FFFE9D;
+}
+
+    .reverseTheme .thumbnail {
+        background-color: #FFFE9D;
+    }
+
+    .reverseTheme .btn {
+        background-color: #FFFE9D;
+        color: #3B0B03;
+    }
+
+    .reverseTheme .caption h3 {
+        color: #FFFE9D;
+        text-shadow: none;
+    }
+
+
+/*REVIEWS GENERAL*/
+.reviewsColor {
+    background-color: rgba(59,11,3,.5);
+    width: 40vw;
+    padding: 0 3vw 8vh 3vw;
+}
+
+.reviewsButton {
+    color: #FFFE9D;
+    padding: 5px 13px;
+}
+
+    .reviewsButton.float {
+        float: right;
+    }
+
 /*REVIEWS INDEX*/
+
+.reviewsMain {
+    background-image: url('images/wood-2065369_960_720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10vh;
+}
+
+    .reviewsMain h2 {
+        font-family: 'Pacifico', cursive;
+        color: #FFFE9D;
+    }
 
 .reviews {
     background-color: #FFFE9D;
     border: 4px groove #3B0B03;
     margin: 15px 10px;
+}
+
+.captionHeading {
+    border-right: 2px groove #3B0B03;
+    padding-top: 15px;
 }
 
 .fieldName {
@@ -110,9 +194,9 @@ h2 {
     font-weight: 900;
 }
 
-.fieldName.comment {
-    padding-bottom: 2vh;
-}
+    .fieldName.comment {
+        padding-bottom: 2vh;
+    }
 
 .captionContent {
     padding: 15px 20px;
@@ -125,22 +209,6 @@ h2 {
     margin-top: 5vh;
 }
 
-    .editBtn #reviewsButton {
-        color: #FFFE9D;
-        padding: 5px 13px;
-    }
-
-.captionHeading {
-    border-right: 2px groove #3B0B03;
-    padding-top: 15px;
-}
-
-.reviewsMain {
-    background-image: url('images/wood-2065369_960_720.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: 10vh;
-}
 
 /*REVIEWS DETAILS PAGE*/
 
@@ -153,6 +221,11 @@ h2 {
     height: 130vh;
     padding: 12vh 7vw;
 }
+
+    .reviewsDetails h2 {
+        font-family: 'Pacifico', cursive;
+        color: #FFFE9D;
+    }
 
 .detailsDisplay {
     padding: 2vh 4vw 5vh 4vw;
@@ -192,22 +265,13 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 5vh 7vw 20vh 7vw;
-}
-
-.reviewsColor{
-    background-color: rgba(59,11,3,.5);
-    width: 40vw;
-    padding: 0 3vw 8vh 3vw;
-}
-
-.reviewsButton {
     color: #FFFE9D;
-    padding: 5px 13px;
 }
 
-.reviewsButton.float {
-    float: right;
-}
+    .reviewsEdit h2, h4 {
+        font-family: 'Pacifico', cursive;
+    }
+
 
 /*REVIEWS CREATE PAGE*/
 .reviewsCreate {
@@ -215,45 +279,64 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 5vh 7vw 20vh 7vw;
-}
-
-
-/*HOME MAIN BODY*/
-
-.locationsRow {
-    padding: 35px 0;
-    margin: 10px auto;
-    color: #3B0B03;
-}
-
-.caption {
-    margin: 0 15px;
-}
-
-    .caption .btn {
-        color: #FFFE9D;
-    }
-
-.thumbnail {
-    background-color: #3B0B03;
-}
-
-.reverseTheme {
-    background-color: #3B0B03;
     color: #FFFE9D;
 }
 
-    .reverseTheme .thumbnail {
-        background-color: #FFFE9D;
-    }
-
-    .reverseTheme .btn {
-        background-color: #FFFE9D;
-        color: #3B0B03;
-    }
-
-    .reverseTheme p {
+    .reviewsCreate h2, h4 {
+        font-family: 'Pacifico', cursive;
         color: #FFFE9D;
+    }
+
+/*REVIEWS DELETE PAGE*/
+.reviewsDelete {
+    background-image: url('images/13310543_10154233178687650_6449646765497122946_n.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-bottom: 30vh;
+}
+
+    .reviewsDelete h2 {
+        font-family: 'Pacifico', cursive;
+        color: #FFFE9D;
+    }
+
+.detailsDisplayHeader {
+    margin-top: 5vh;
+}
+
+.deleteBtn {
+    float: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 5vh;
+}
+
+/*LOCATIONS MODEL VIEWS*/
+.locationsViews {
+    background-image: url('images/DSCN2850.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+    color: black;
+}
+
+
+/*CATEGORIES MODEL VIEWS*/
+
+.categoriesViews {
+    background-image: url('images/15419646_10211266295003398_3913232965166081911_o.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 200vh;
+    color: black;
+}
+
+    .categoriesViews .categoriesDisplay {
+        background-color: rgba(200,200,200,.5);
+        padding: 3vh 4vw;
+        margin-top: 5vh;
     }
 
 /*FOOTER*/
@@ -278,4 +361,42 @@ footer {
 .glyphicon-chevron-up {
     padding-top: 4vh;
     margin-bottom: 0;
+}
+
+
+/*RESIZING SPECIFICS*/
+
+@media (max-width: 1200px) {
+
+    /*GENERAL*/
+    .reviewsColor {
+        width: 85vw;
+    }
+
+    /*REVIEWS MAIN PAGE*/
+    .captionContent {
+        padding-bottom: 10vh;
+        margin: 0;
+    }
+
+    .captionHeading {
+        border: none;
+    }
+
+    .editBtn, .deleteBtn {
+        margin: 2vh;
+    }
+
+    /*REVIEWS DETAILS PAGE*/
+    .detailsDisplay {
+        width: 85vw;
+    }
+
+    .detailsMain {
+        border: none;
+    }
+
+    .detailsRanchInfo {
+        padding-top: 10vh;
+    }
 }
