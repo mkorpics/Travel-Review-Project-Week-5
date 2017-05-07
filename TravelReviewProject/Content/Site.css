@@ -110,16 +110,19 @@ h2 {
     font-weight: 900;
 }
 
+.fieldName.comment {
+    padding-bottom: 2vh;
+}
+
 .captionContent {
     padding: 15px 20px;
-    height: 30vh;
 }
 
 .editBtn {
     float: right;
     margin-bottom: 0;
     padding-bottom: 0;
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 
     .editBtn #reviewsButton {
@@ -204,6 +207,14 @@ h2 {
 
 .reviewsButton.float {
     float: right;
+}
+
+/*REVIEWS CREATE PAGE*/
+.reviewsCreate {
+    background-image: url('images/loping_0458.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5vh 7vw 20vh 7vw;
 }
 
 

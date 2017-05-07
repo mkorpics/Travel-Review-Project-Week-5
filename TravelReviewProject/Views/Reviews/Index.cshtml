@@ -9,7 +9,7 @@
         <h2>Reviews</h2>
 
         <p>
-            @Html.ActionLink("Create New", "Create")
+            @Html.ActionLink("Create New", "Create", new { }, new { role="button", @class="btn reviewsButton"})
         </p>
     
         <div class="row">
@@ -25,7 +25,7 @@
                         <p>@Html.DisplayFor(modelItem => item.Author)</p>
                     </div>
                     <div class="col-md-8 col-sm-8 captionContent">
-                        <p class="fieldName">@Html.DisplayNameFor(model => model.Comment):</p>
+                        <p class="fieldName comment">@Html.DisplayNameFor(model => model.Comment):</p>
                         <p>@Html.DisplayFor(modelItem => item.Comment)</p>
                         <p class="editBtn">
                             @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { role = "button", @class = "btn reviewsButton" })
